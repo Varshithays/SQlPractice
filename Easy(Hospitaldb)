@@ -1,0 +1,28 @@
+  SELECT first_name,last_name ,gender from patients where gender='M';
+ 2. select first_name ,last_name from patients where allergies is null;
+ 3. select first_name from patients where first_name like 'c%';
+ 4.SELECT first_name,last_name  from patients where weight between 100 and 120;
+ 5.update  patients set allergies='NKA' where allergies is null
+ 6.select concat(first_name,' ',last_name) from patients;
+ 7.select first_name,last_name,province_name from patients p join province_names pn 
+ on p.province_id=pn.province_id;
+ 8.select count(*) as total_patients from patients where year(birth_date)=2010 ;
+ 9.SELECT first_name,last_name ,height from patients where height = 
+ (select max(height) from patients);
+ 10.select  * from patients where patient_id in (1,45,534,879,1000);
+ 
+select count(*) patient_id from admissions;
+select * from admissions where admission_date=discharge_date;
+select patient_id ,count(*) patient_id from admissions where patient_id=579;
+select distinct city from patients where province_id='NS';
+select first_name,last_name,birth_date from patients where height >160 and weight>70;
+select first_name,last_name,allergies from patients
+where allergies is not null and city='Hamilton ';
+select distinct city 
+from patients 
+where city like 'a%' OR
+city like 'e%' OR 
+city like 'i%' OR 
+ city like'o%'or 
+ city like'u%' 
+ order by city;

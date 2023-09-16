@@ -1,4 +1,4 @@
 # SQlPractice
 This repository contains all my sql solutions for practice questions in sqlpractice.com and others.
 
-here is the link https://www.sql-practice.com/
+for queries questions refer this and solve. https://www.sql-practice.com/ 
